@@ -6,11 +6,12 @@ app = Flask(__name__)
 def displayGrid():
 
     if request.method == "POST":
-        #get the data from the form and check right or wrong against solution.
-        # print(request.form.getlist())
+        #work out how to get all form data and turn it into a list
+        #compare this new list with the solution
+        #create a new list with indication of correct or not
 
         gridData = [
-            ["","","","","","","","",""],
+            [[1,False]],"","","","","","","",""],
             ["","","","","","","","",""],
             ["","","","","","","","",""],
             ["","","","","","","","",""],
@@ -22,6 +23,8 @@ def displayGrid():
         ]
         #check if it is right or wrong
     else:
+        ##Generate a new sudoku
+        ##Form this as a grid and send the solution and initial grid
 
         solution = [
             ["1","","","","","","","",""],

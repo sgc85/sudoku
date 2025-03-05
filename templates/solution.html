@@ -9,13 +9,14 @@
 <body>
     <h1>SUDOKU</h1>
     <form action = "/" method = "POST">
+        <input type = "hidden" value = {{solution}} name = "solution">
         <div class = "game-space">
             <div class = "grid">
 
             {% for r in range(gridData|length) %}
             <div class = "grid-row">
                 {% for c in range(gridData|length) %}
-                    <input  class = "grid-cell" type = "number" value = {{ gridData[c][r] }} >
+                    <input name= {{ "r" + r|string + "c" + c|string }} class = "grid-cell" type = "number" value = {{ gridData[c][r] }} >
                 {% endfor %}
             </div>
             {% endfor %}

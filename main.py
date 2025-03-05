@@ -22,6 +22,18 @@ def displayGrid():
         ]
         #check if it is right or wrong
     else:
+
+        solution = [
+            ["1","","","","","","","",""],
+            ["","","","3","","","","",""],
+            ["","","","","","","","",""],
+            ["","","","","","","","",""],
+            ["","","","","","7","","",""],
+            ["","","","","","","","",""],
+            ["","","","4","","","","",""],
+            ["","","","","","","","",""],
+            ["","","","","","","","",""],
+        ]
         gridData = [
             ["1","","","","","","","",""],
             ["","","","3","","","","",""],
@@ -35,7 +47,7 @@ def displayGrid():
         ]
         
         
-    return render_template("solution.html", gridData = gridData)
+    return render_template("solution.html", gridData = gridData, solution = solution)
 
 
 

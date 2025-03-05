@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(255, 224, 224);
+}
+
+h1{
+    text-align: center;
+}
+
+.game-space{
+    text-align: center;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+}
+
+.grid-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-cell{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
